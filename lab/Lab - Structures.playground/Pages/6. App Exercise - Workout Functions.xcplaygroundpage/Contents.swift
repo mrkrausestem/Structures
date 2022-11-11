@@ -1,20 +1,21 @@
 /*:
- ## App Exercise - Workout Functions
+ ## App Exercise - Functions
  
- >These exercises reinforce Swift concepts in the context of a fitness tracking app.
+ >These exercises reinforce Swift concepts in the context of a math tutoring app.
  
- A `RunningWorkout` struct has been created for you below. Add a method on `RunningWorkout` called `postWorkoutStats` that prints out the details of the run. Then create an instance of `RunningWorkout` and call `postWorkoutStats()`.
+ An `Assessment` struct has been created for you below. Add a method on `Assessment` called `grade` that prints out the details of the quiz, including the calculated percentage. Then create an instance of `Assessment` and call `grade()`. (.5 points)
  */
-struct RunningWorkout {
-    var distance: Double
-    var time: Double
-    var elevation: Double
+struct Assessment {
+    var questionsCorrect: Double
+    var totalQuestions: Double
+    var topic: String
 }
+
 /*:
- A `Steps` struct has been created for you below, representing the day's step-tracking data. It has the goal number of steps for the day and the number of steps taken so far. Create a method on `Steps` called `takeStep` that increments the value of `steps` by one. Then create an instance of `Steps` and call `takeStep()`. Print the value of the instance's `steps` property before and after the method call.
+ A `Questions` struct has been created for you below, representing the day's tracking data. It has the goal number of questions for the day and the number of answered so far. Create a method on `Questions` called `answerQuestion` that increments the value of `questionsAttempted` by one. Then create an instance of `Questions` and call `answerQuestion()`. Print the value of the instance's `tried` property before and after the method call. (.5 points)
  */
-struct Steps { 
-    var steps: Int
-    var goal: Int
+struct Questions {
+    var questionsAttempted: Int
+    var dailyGoal: Int
 }
-//: [Previous](@previous)  |  page 6 of 10  |  [Next: Exercise - Computed Properties and Property Observers](@next)
+//: [Previous](@previous)  |  page 6 of 10  |  [Next](@next)

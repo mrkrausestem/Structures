@@ -1,28 +1,23 @@
 /*:
- ## App Exercise - Mile Times and Congratulations
+ ## App Exercise - Assessments and Congratulations
  
- >These exercises reinforce Swift concepts in the context of a fitness tracking app.
+ >These exercises reinforce Swift concepts in the context of a math tutoring app.
  
- The `RunningWorkout` struct below holds information about your users' running workouts. However, you decide to add information about average mile time. Add a computed property called `averageMileTime` that uses `distance` and `time` to compute the user's average mile time. Assume that `distance` is in meters and 1600 meters is a mile.
+ The `Assessment` struct below holds information about your users' assessments. However, you decide to add information about the assigned grade. Add a computed property called `percentCorrect` that uses `questionsAttempted` and `questionsCorrect` to compute the user's average mile time.
  
- Create an instance of `RunningWorkout` and print the `averageMileTime` property. Check that it works properly.
+ Create an instance of `Assessment` and print the `percentCorrect` property. Check that it works properly. (.5 points)
  */
-struct RunningWorkout {
-    var distance: Double
-    var time: Double
-    var elevation: Double
+struct Assessment {
+    var questionsAttempted: Double
+    var questionsCorrect: Double
+    var assessmentID: Int
 }
+
 /*:
- In other app exercises, you've provided encouraging messages to the user based on how many steps they've completed. A great place to check whether or not you should display something to the user is in a property observer.
+ In other app exercises, you've provided encouraging messages to the user based on how they are doing. A great place to check whether or not you should display something to the user is in a property observer.
  
- In the `Steps` struct below, add a `willSet` to the `steps` property that will check if the new value is equal to `goal`, and if it is, prints a congratulatory message. Create an instance of `Steps` where `steps` is 9999 and `goal` is 10000, then call `takeStep()` and see if your message is printed to the console.
+ In the `Assessment` struct above, add a `grade` property that is a string and default it to "". Write a mutating method called `assignGrade` that assigns a letter grade based on the `percentCorrect` calculated property. Then add a `willSet` observer that watches the `grade` property and prints a message that says "Congratulations!" if the user gets an "A" on an assessment. Create multiple instances of `Assessment` below and print their grades. Make sure some assessments have A's to test the `willSet`.  (.5 points)
  */
-struct Steps {
-    var steps: Int
-    var goal: Int
-    
-    mutating func takeStep() {
-        steps += 1
-    }
-}
-//: [Previous](@previous)  |  page 8 of 10  |  [Next: Exercise - Type Properties and Methods](@next)
+
+
+//: [Previous](@previous)  |  page 8 of 10  |  [Next](@next)
