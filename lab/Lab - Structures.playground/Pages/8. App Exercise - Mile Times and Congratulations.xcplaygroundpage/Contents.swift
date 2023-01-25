@@ -3,7 +3,7 @@
  
  >These exercises reinforce Swift concepts in the context of a math tutoring app.
  
- The `Assessment` struct below holds information about your users' assessments. However, you decide to add information about the assigned grade. Add a computed property called `percentCorrect` that uses `questionsAttempted` and `questionsCorrect` to compute the user's average mile time.
+ The `Assessment` struct below holds information about your users' assessments. However, you decide to add information about the assigned grade. Add a computed property called `percentCorrect` that uses `questionsAttempted` and `questionsCorrect` to compute the user's average.
  
  Create an instance of `Assessment` and print the `percentCorrect` property. Check that it works properly. (.5 points)
  */
