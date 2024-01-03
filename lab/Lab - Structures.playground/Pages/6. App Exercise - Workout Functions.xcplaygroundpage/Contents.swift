@@ -12,7 +12,7 @@ struct Assessment {
 }
 
 /*:
- A `Questions` struct has been created for you below, representing the day's tracking data. It has the goal number of questions for the day and the number of answered so far. Create a method on `Questions` called `answerQuestion` that increments the value of `questionsAttempted` by one. Then create an instance of `Questions` and call `answerQuestion()`. Print the value of the instance's `tried` property before and after the method call. (.5 points)
+ A `Questions` struct has been created for you below, representing the day's tracking data. It has the goal number of questions for the day and the number of answered so far. Create a method on `Questions` called `answerQuestion` that increments the value of `questionsAttempted` by one. Then create an instance of `Questions` and call `answerQuestion()`. Print the value of the instance's `questionsAttempted` property before and after the method call. (.5 points)
  */
 struct Questions {
     var questionsAttempted: Int
